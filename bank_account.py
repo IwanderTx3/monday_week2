@@ -86,8 +86,8 @@ def action_list(current_user,current_account):
     print("What action would you like to preform?")
     print(' 1) Add user')
     print(' 2) Change user')
-    print(' 3) Change account')
-    print(' 4) Open account')
+    print(' 3) Open account')
+    print(' 4) Change account')
     print(' 5) Close acount ')
     print(' 6) Deposit')
     print(' 7) Withdrawl')
@@ -105,11 +105,11 @@ def action_list(current_user,current_account):
             user_number = int(input("Enter user number: "))
             current_user = user_list[user_number]
             action_list(current_user,current_account)
-        elif action == '3':
+        elif action == '4':
             account_number = int(input("Enter account number: "))
             current_account = account_list[account_number]
             action_list(current_user,current_account)
-        elif action == '4':
+        elif action == '3':
             create_account(current_user)
             current_account =account_list[-1]
             action_list(current_user,current_account)
